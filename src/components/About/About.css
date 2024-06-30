@@ -1,0 +1,195 @@
+#about .buttons-wrapper{
+    margin: 40px 0;
+}
+#about .play-btn .play{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    border-radius:50% ;
+    box-shadow: 0 15px 25px var(--primary);
+    cursor: pointer;
+}
+#about .play-btn .play::before{
+    content: '';
+    position: absolute;
+    border: 20px solid var(--color-white);
+    border-top:12px solid transparent ;
+    border-bottom: 12px solid transparent;
+    border-right: 0px solid transparent;
+    transform: translateX(5px);
+}
+#about .video-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 210;
+    transform: translate(-50%,-50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    background: var(--primary);
+}
+#about .video-container.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+#about .video-container .video-clip{
+    max-width: 900px;
+    background: var(--primary);
+    padding: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 10px;
+    transform: scale(0.5);
+    transition: .5s ease;
+    transition-delay: .5s ;
+}
+#about .video-container.active .video-clip{
+    transform: scale(1);
+}
+#about .video-container .video-clip .close-btn{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 0 0;
+    font-size: 30px;
+}
+#about .video-container .video-clip video{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+#about .brands-container{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 80px 0;
+    margin: 30px 0;
+    position: relative;
+}
+#about .brands-container::before,
+#about .brands-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+#about .brands-container::before{
+    left: 0;
+    background: linear-gradient(to left, transparent,var(--bg-primary));
+}
+#about .brands-container::after{
+    right: 0;
+    background: linear-gradient(to right, transparent,var(--bg-primary));
+}
+#about .brands-container .logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+#about .brands-container:hover .logos-slide{
+    animation-play-state:paused ;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#about .brands-container .logos-slide img{
+    height: 30px;
+    width: auto;
+    margin: 0 40px;
+    display: inline-block;
+}
+#about .education-experience-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#about .education-experience-container .contents{
+    padding: 0px 30px;
+    border-left: 2px solid var(--border-primary);
+    border-image: linear-gradient(45deg, var(--primary-variant), #2c7744,#F0Cb35,#FC00FF)1;
+}
+#about .education-experience-container .box{
+ position:relative ;
+ padding: 20px;
+ background: var(--bg-secondary);   
+ cursor: pointer;
+ transition: var(--transition);
+ margin-bottom: 20px;
+ border-radius: 10px;
+}
+#about .education-experience-container .box:hover{
+    box-shadow: var(--shadow-3);
+}
+#about .education-experience-container .box:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% +22px);
+    top: 0;
+    background: var(--bg-accent);
+    border: solid 2px var(--primary-variant);
+}
+#about .education-experience-container .box:hover::before{
+    background: var(--primary-variant);
+}
+#about .education-experience-container .box h4{
+    position: relative;
+    color: var(--primary);
+}
+#about .education-experience-container .box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    color: var(--foreground);
+}
+#about .education-experience-container .box p{
+    color: var(--muted-foreground);
+    font-size: 17px;
+}
+
+@media(max-width:991px){
+    #about .video-container .video-clip{
+        max-width: 90%;
+    }
+}
+@media(max-width:900px){
+    #about .brands-container .logos-slide img{
+        height: 20px;
+        margin: 0 20px;
+    }
+    #about .brands-container::before,
+    #about .brands-container::after{
+        width: 150px ;
+    }
+}
+@media(max-width:850px){
+    #about .container{
+        grid-template-columns: 100%;
+    }
+    #about .buttons-wrapper{
+        flex-direction: column;
+    }
+}
+@media(max-width:768px){
+    #about .education-experience-container{
+        grid-template-columns: 100%;
+    }
+    #about .education-experience-container .contents{
+        padding-right: 0;
+    }
+    #about .brands-container::before,
+    #about .brands-container::after{
+        width: 90px;
+    }
+}

@@ -1,0 +1,25 @@
+footer .footer-tabs{
+    margin: 20px 0;
+}
+
+footer .footer-tabs .tab{
+    color: var(--muted-foreground);
+    transition: var(--transition);
+}
+footer .footer-tabs .tab:hover{
+    color: var(--foreground);
+}
+footer .handles-container{
+    margin-top: 20px;
+    justify-content: center;
+}
+footer .copyright{
+    flex-direction: column;
+    padding:30px 20px ;
+}
+
+@media(max-width:700px){
+    footer .footer-tabs{
+        flex-direction: column;
+    }
+}
