@@ -67,7 +67,7 @@ nav #close-sidebar-btn{
     nav #sidebar{
         position: fixed;
         top: 0;
-        left: -300%;
+        left: -600%;
         height: 100%;
         width: 100%;
         min-width: 100vh;
@@ -99,6 +99,23 @@ nav #close-sidebar-btn{
 @media (max-width:400px){
     nav .contact-btn{
         display: none;
+    }
+    nav #sidebar{
+        position: fixed;
+        top: 0;
+        left: -600%;
+        height: 100%;
+        width: 100%;
+        min-width: 100vh;
+        max-width: 320px;
+        z-index: 150;
+        background: var(--bg-primary);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 20px;
+        padding-top: 80px;
+        transition: var(--transition);
     }
 
 }
