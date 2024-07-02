@@ -97,7 +97,7 @@ const Navbar = () => {
     
     <nav className='flex' >
       {
-        open ? (<div className='sidebar-overlay' onClick={()=>setOpen(!open)} />): ""
+        open ? (<div className='sidebar-overlay' onClick={()=>setOpen(!open)} />): ''
       }
       <div className='column flex-center'>
       <Logo />
