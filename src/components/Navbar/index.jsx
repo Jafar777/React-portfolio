@@ -39,7 +39,7 @@ const navTabs = [
 ]
 
 const Navbar = () => {
-  const [open,setOpen] = useState(false);
+  
   useGSAP( ()=>{
     gsap.timeline({delay:0.5})
     .fromTo(
@@ -92,11 +92,12 @@ const Navbar = () => {
 
 
   })
+  const [open,setOpen] = useState(false);
   return (
     
     <nav className='flex' >
       {
-        open ? (<div className='sidebar-overlay ' onClick={()=>setOpen(!open)} />): ""
+        open ? (<div className='sidebar-overlay' onClick={()=>setOpen(!open)} />): ""
       }
       <div className='column flex-center'>
       <Logo />
