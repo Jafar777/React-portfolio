@@ -56,18 +56,17 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className='flex'>
-      {open && (<div className='sidebar-overlay active' onClick={() => setOpen(!open)} />)}
-      <div className='column flex-center'>
-        <Logo />
-      </div>
-      <div className={`column flex-center tabs-container ${open ? 'active' : ''}`} id='sidebar'>
-        <div className="flex-center icon-wrapper" id='close-sidebar-btn' onClick={() => setOpen(!open)}>
+    <nav className='navbar'>
+      {open && <div className='sidebar-overlay active' onClick={() => setOpen(false)} />}
+      <div className='logo'>Logo</div>
+      <div className={`tabs-container ${open ? 'active' : ''}`} id='sidebar'>
+        <div className='close-sidebar-btn' onClick={() => setOpen(false)}>
           <FaTimes />
         </div>
         {navTabs.map((tab, index) => (
-          <Link activeClass="active"
-            className='flex-center tab'
+          <Link
+            activeClass="active"
+            className='tab'
             to={tab.id}
             spy={true}
             smooth={true}
@@ -80,12 +79,8 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-      <div className='column flex-center buttons-wrapper'>
-        <SocialHandles />
-        <Link to='contact' smooth={true} className='btn primary contact-btn'>
-          Hire me
-        </Link>
-        <div className='flex-center icon-wrapper' id='menu-btn' onClick={() => setOpen(!open)}>
+      <div className='buttons-wrapper'>
+        <div className='menu-btn' onClick={() => setOpen(!open)}>
           <FaBars />
         </div>
       </div>
