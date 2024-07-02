@@ -193,7 +193,7 @@
 
 
 /*making general styles responsive*/
-@media (max-width:900px){
+@media(max-width:900px){
   .container{
     padding: 40px 20px;
   }
@@ -207,7 +207,7 @@
     text-align: center;
   }
 }
-@media (max-width:600px){
+@media(max-width:600px){
   .heading-1{
     font-size: 25px;
     line-height: 30px;
