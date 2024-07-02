@@ -95,4 +95,10 @@
     .contact-btn {
         display: none;
     }
+    .tabs-container {
+        display: none;
+    }
+    .tabs-container.active{
+        display: block;
+    }
 }
