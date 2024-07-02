@@ -97,6 +97,7 @@ nav #close-sidebar-btn{
     }
 }
 @media (max-width:400px){
+    nav #menu-btn,
     nav .contact-btn{
         display: none;
     }
