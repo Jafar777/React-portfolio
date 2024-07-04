@@ -45,7 +45,7 @@
     #hero .container{
         grid-template-columns: 100%;
     }
-    #hero .descripton{
+    #hero .description{
         text-align: center;
     }  
     #hero .buttons-wrapper{
