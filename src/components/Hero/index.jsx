@@ -58,7 +58,7 @@ const Hero = () => {
     )
   })
   return (
-    <section id='hero'>
+    <section id='hero' className='flex blur-effect'>
       <div className='container'>
         <div className="column hero-image">
           <img src={hero_image} alt="" />

@@ -1,4 +1,4 @@
-#hero.blur-effect::before{
+#hero .blur-effect::before{
     top: 0;
     right: 0;
     margin-right:-5% ;
