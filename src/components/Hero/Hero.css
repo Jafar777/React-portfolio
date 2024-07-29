@@ -39,6 +39,7 @@
 @media (max-width:1040px){
     #hero .container{
         grid-template-columns: 400px auto;
+        display:flex;
     }
 }
 @media (max-width:900){
