@@ -10,7 +10,7 @@ const Logo = () => {
         <FaReact />
       
       </div>
-      <h1 className='name'> Developer</h1>
+      <h1 className='name'> Jafar Al Soubeni</h1>
     </div>
   )
 }

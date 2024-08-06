@@ -13,28 +13,16 @@ const navTabs = [
     id: 'hero',
   },
   {
-    name: 'About',
-    id: 'about',
-  },
-  {
     name: 'Skills',
     id: 'skills',
-  },
-  {
-    name: 'Services',
-    id: 'services',
   },
   {
     name: 'Projects',
     id: 'projects',
   },
   {
-    name: 'Feedbacks',
-    id: 'feedbacks',
-  },
-  {
-    name: 'Blog',
-    id: 'blog',
+    name: 'Contact',
+    id: 'contact',
   },
 ]
 

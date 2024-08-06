@@ -65,14 +65,14 @@ const Hero = () => {
         </div>
         <div className="column">
           <h1 className='heading-1'>
-            Creative
+            Full -
           <span className='gradient-text'>
-          Junior  Frontend 
+          Stack Web 
           </span>
             Developer
           </h1>
           <p className='muted description'>
-          Diligent Information Technology student with two years of hands-on experience in web development, specializing in JavaScript, HTML, and CSS. Proficient in ReactJS and GitHub, with comprehensive knowledge of the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS). Adept at creating responsive and visually appealing web pages. Seeking a challenging position where I can leverage my skills to contribute to innovative and dynamic projects.
+          I am a diligent Information Technology student with two years of experience in web development, specializing in JavaScript, HTML, CSS, ReactJS, and the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS). Proficient in GitHub, I create responsive, visually appealing web applications. I stay updated on industry advancements, enjoy coding challenges, and contribute to open-source projects. Seeking a challenging position to apply my skills to innovative web development projects.
           </p>
           <Facts />
           <div className="flex-center buttons-wrapper">

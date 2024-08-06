@@ -53,7 +53,7 @@ const Projects = () => {
     <section id='projects' ref={container}>
       <div className="container">
         <div className="section-header">
-          <h1 className="heading-1">
+          <h1 className="heading-1"> My Projects
             <span className="hradiend-text"></span>
           </h1>
         </div>
@@ -65,79 +65,21 @@ const Projects = () => {
               <img src={project1} alt="" />
             </div>
             <div className="details">
-              <h3 className="name">Project management dashboard design</h3>
-              <p className="muted">Efficiently streamline project oversight with meticulously crafted dashboard designs, ensuring intuitive data visualization and actionable insights for informed decision-making and enhanced project outcomes. 
-
+              <h3 className="name">Real Estate WebSite (Alrawafid)</h3>
+              <p className="muted"> 
+              Using the MERN stack
+               (MongoDB, ExpressJS, ReactJS, NodeJS) for software development,
+                I successfully built a comprehensive website for a real estate company,
+                 enhancing their online presence and streamlining property management processes.
               </p>
             </div>
             <div className="flex buttons-wrapper">
-              <a href="#" className="btn share-btn">
-              <FaShare />
-              </a>
-              <a href="#" className="btn primary">Demo</a>
+              <a href="https://alrawafid-mern.onrender.com/" className="btn primary">Demo</a>
             </div>
           </div>
           {/*Project end */}
           
-           {/*Project start */}
-          <div className="flex project">
-            <div className="picture">
-              <img src={project2} alt="" />
-            </div>
-            <div className="details">
-              <h3 className="name">Files storage cloud app</h3>
-              <p className="muted">Enhance organizational efficiency and data accessibility with a robust files storage cloud app, offering secure, scalable, and user-friendly storage solutions tailored to streamline document management and collaboration across platforms.
-
-              </p>
-            </div>
-            <div className="flex buttons-wrapper">
-              <a href="#" className="btn share-btn">
-              <FaShare />
-              </a>
-              <a href="#" className="btn primary">Demo</a>
-            </div>
-          </div>
-          {/*Project end */}
           
-           {/*Project start */}
-          <div className="flex project">
-            <div className="picture">
-              <img src={project3} alt="" />
-            </div>
-            <div className="details">
-              <h3 className="name">Task management mobile app </h3>
-              <p className="muted">Optimize productivity and collaboration on-the-go with a task management mobile app, featuring intuitive task organization, real-time updates, and seamless team communication, ensuring efficient task tracking and completion across all devices.
-
-              </p>
-            </div>
-            <div className="flex buttons-wrapper">
-              <a href="#" className="btn share-btn">
-              <FaShare />
-              </a>
-              <a href="#" className="btn primary">Demo</a>
-            </div>
-          </div>
-          {/*Project end */}
-
-           {/*Project start */}
-           <div className="flex project">
-            <div className="picture">
-              <img src={project4} alt="" />
-            </div>
-            <div className="details">
-              <h3 className="name">Online payment dashboard</h3>
-              <p className="muted">Streamline financial operations with an online payment dashboard, offering comprehensive transaction management, real-time analytics, and secure payment processing, ensuring seamless financial oversight and transactional efficiency.
-
-              </p>
-            </div>
-            <div className="flex buttons-wrapper">
-              <a href="#" className="btn share-btn">
-              <FaShare />
-              </a>
-              <a href="#" className="btn primary">Demo</a>
-            </div>
-          </div>
-          {/*Project end */}
         </div>
       </div>
     </section>

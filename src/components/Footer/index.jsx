@@ -14,28 +14,16 @@ const footerTabs = [
     id: 'hero',
   },
   {
-    name: 'About',
-    id: 'about',
-  },
-  {
     name: 'Skills',
     id: 'skills',
-  },
-  {
-    name: 'Services',
-    id: 'services',
   },
   {
     name: 'Projects',
     id: 'projects',
   },
   {
-    name: 'Feedbacks',
-    id: 'feedbacks',
-  },
-  {
-    name: 'Blog',
-    id: 'blog',
+    name: 'Contact',
+    id: 'contact',
   },
 ];
 
@@ -91,11 +79,7 @@ const Footer = () => {
       </div> {/*end container */}
 
       <div className="flex-center copyright">
-        <p className="muted">
-          Built with love by Jafar Al Soubeni
-
-        </p>
-        <p>Copyright &copy; All rights reserved -| 2024</p>
+        <p> &copy; Copyright - All rights reserved {new Date().getFullYear()}</p>
       </div>
     </footer>
   )

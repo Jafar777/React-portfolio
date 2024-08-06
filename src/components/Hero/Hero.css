@@ -44,7 +44,6 @@
 @media (max-width:850){
     #hero .container{
         grid-template-columns: 100%;
-    
     }
     #hero .description{
         text-align: center;
@@ -54,7 +53,9 @@
     }
 }
 @media(max-width:768px){
-    #hero .column{
+    #hero .container {
         grid-template-columns: 100%;
+        display: grid;
+
     }
 }

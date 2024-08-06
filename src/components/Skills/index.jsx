@@ -53,9 +53,6 @@ const Skills = () => {
           <h1 className="heading-1 gradient-text">
             My Skills
           </h1>
-          <p className="muted">
-          I possess advanced proficiency in crafting semantic and responsive web layouts with HTML5 and CSS3, extensive experience developing interactive front-end interfaces using JavaScript and ReactJS, and proficient in building scalable server-side applications with Node.js, including RESTful APIs and integration with MongoDB for robust backend solutions 
-          </p>
         </div>
         <div className="skills-container">
           {/*skills start */}
@@ -65,7 +62,6 @@ const Skills = () => {
             </div>
             <div className="details">
               <h3 className="name">Html&Css</h3>
-              <h2 className="progress">95%</h2>
             </div>
           </div>
             {/*skill end */}
@@ -77,7 +73,6 @@ const Skills = () => {
             </div>
             <div className="details">
               <h3 className="name">NodeJs</h3>
-              <h2 className="progress">80%</h2>
             </div>
           </div>
             {/*skill end */}
@@ -89,7 +84,6 @@ const Skills = () => {
             </div>
             <div className="details">
               <h3 className="name">JavaScript</h3>
-              <h2 className="progress">90%</h2>
             </div>
           </div>
             {/*skill end */}
@@ -101,7 +95,6 @@ const Skills = () => {
             </div>
             <div className="details">
               <h3 className="name">ReactJS</h3>
-              <h2 className="progress">90%</h2>
             </div>
           </div>
             {/*skill end */}
