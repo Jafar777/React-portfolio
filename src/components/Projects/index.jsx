@@ -1,9 +1,6 @@
 import React, { useRef } from 'react'
 import "./Projects.css"
 import project1 from '../../assets/project-1.png'
-import project2 from '../../assets/project-2.jpg'
-import project3 from '../../assets/project-3.jpg'
-import project4 from '../../assets/project-4.png'
 import { FaShare } from "react-icons/fa";
 import { gsap } from "gsap-trial";
 import { useGSAP } from '@gsap/react'

@@ -95,6 +95,14 @@ nav #close-sidebar-btn{
     nav #close-sidebar-btn{
         display: flex;
     }
+    nav .contact-btn{
+        font-size: small;
+    }
+}
+@media (max-width:500px){
+    nav .contact-btn{
+        font-size: x-small;
+    }
 }
 @media (max-width:400px){
     nav .contact-btn{

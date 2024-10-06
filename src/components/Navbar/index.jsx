@@ -113,8 +113,12 @@ const Navbar = () => {
       </div>
       <div className='column flex-center buttons-wrapper'>
         <SocialHandles />
-        <Link to='contact' smooth={true} className='btn primary contact-btn'>
-      Hire me</Link>
+        <Link
+         to='contact'
+          smooth={true}
+           className='btn primary contact-btn'>
+          Hire me
+        </Link>
       <div className='flex-center icon-wrapper' id='menu-btn' onClick={()=>setOpen(!open)}>
         <FaBars />
       </div>

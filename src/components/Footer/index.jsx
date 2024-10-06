@@ -69,7 +69,7 @@ const Footer = () => {
             onClick={()=>setOpen(false)}
             key={index}
             >
-             <h4> {tab.name}</h4>
+             <p> {tab.name}</p>
             </Link>
 
           ))

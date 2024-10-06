@@ -1,11 +1,14 @@
 #contact .container{
-    display: grid;
+    display: flex;
     grid-template-columns: 500px auto;
     gap: 30px;
     border-radius: 10px;
     padding: 40px;
     background: var(--bg-secondary);
+    text-align: center;
+
 }
+
 #contact .contact-options .options{
     margin-top: 50px;
 }
