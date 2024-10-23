@@ -71,7 +71,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex buttons-wrapper">
-              <a href="https://alrawafid-mern.onrender.com/" className="btn primary">Demo</a>
+              <a href="https://alrawafid-mern.onrender.com/" className="btn primary">View</a>
             </div>
           </div>
           {/*Project end */}
